@@ -1,7 +1,6 @@
 package br.com.alura.aluramed.medico;
 
 import br.com.alura.aluramed.endereco.Endereco;
-import jakarta.annotation.Generated;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -14,7 +13,7 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
+
 
 @Table(name = "medicos")
 @Entity(name = "Medico")
@@ -24,6 +23,14 @@ import lombok.Setter;
 @EqualsAndHashCode(of = "id")
 public class Medico {
     
+    public Medico(DadosCadastroMedico dados) {
+        this.nome = dados.nome();
+        this.email = dados.email();
+        this.crm = dados.crm();
+        this.especialidade = dados.especialidade();
+        this.endereco = new Endereco(dados.endereco());
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
