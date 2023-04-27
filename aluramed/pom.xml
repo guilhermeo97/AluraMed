@@ -72,7 +72,7 @@
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
+							<artifactId>flyway-mysql</artifactId>
 						</exclude>
 					</excludes>
 				</configuration>
