@@ -1,6 +1,6 @@
-package br.com.alura.aluramed.Paciente;
+package br.com.alura.aluramed.domain.paciente;
 
-import br.com.alura.aluramed.endereco.Endereco;
+import br.com.alura.aluramed.domain.endereco.Endereco;
 
 public record DadosDetalhamentoPaciente(long id, String nome, String cpf, String telefone, Endereco endereco) {
     

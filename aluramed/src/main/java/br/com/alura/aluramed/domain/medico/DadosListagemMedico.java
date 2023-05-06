@@ -1,4 +1,4 @@
-package br.com.alura.aluramed.medico;
+package br.com.alura.aluramed.domain.medico;
 
 public record DadosListagemMedico(
     long id,

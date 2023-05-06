@@ -1,4 +1,4 @@
-package br.com.alura.aluramed.Paciente;
+package br.com.alura.aluramed.domain.paciente;
 
 public record DadosListagemPaciente(long id, String nome, String email, String cpf) {
 

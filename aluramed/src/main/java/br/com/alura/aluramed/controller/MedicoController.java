@@ -16,12 +16,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import br.com.alura.aluramed.medico.DadosAtualizacaoMedico;
-import br.com.alura.aluramed.medico.DadosCadastroMedico;
-import br.com.alura.aluramed.medico.DadosDetalhamentoMedico;
-import br.com.alura.aluramed.medico.DadosListagemMedico;
-import br.com.alura.aluramed.medico.Medico;
-import br.com.alura.aluramed.medico.MedicoRepository;
+import br.com.alura.aluramed.domain.medico.*;
+
 import jakarta.validation.Valid;
 
 @RestController

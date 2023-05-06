@@ -1,6 +1,6 @@
-package br.com.alura.aluramed.medico;
+package br.com.alura.aluramed.domain.medico;
 
-import br.com.alura.aluramed.endereco.Endereco;
+import br.com.alura.aluramed.domain.endereco.Endereco;
 
 public record DadosDetalhamentoMedico(long id, String nome, String email, String crm, String telefone, Especialidade especialidade, Endereco endereco ) {
     

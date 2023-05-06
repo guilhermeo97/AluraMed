@@ -17,12 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import br.com.alura.aluramed.Paciente.DadosAtualizacaoPaciente;
-import br.com.alura.aluramed.Paciente.DadosCadastroPaciente;
-import br.com.alura.aluramed.Paciente.DadosDetalhamentoPaciente;
-import br.com.alura.aluramed.Paciente.DadosListagemPaciente;
-import br.com.alura.aluramed.Paciente.Paciente;
-import br.com.alura.aluramed.Paciente.PacienteRepository;
+import br.com.alura.aluramed.domain.paciente.*;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import lombok.var;

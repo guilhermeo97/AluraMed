@@ -1,6 +1,6 @@
-package br.com.alura.aluramed.medico;
+package br.com.alura.aluramed.domain.medico;
 
-import br.com.alura.aluramed.endereco.Endereco;
+import br.com.alura.aluramed.domain.endereco.Endereco;
 import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
