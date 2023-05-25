@@ -24,6 +24,7 @@ public class SecurityConfigurations {
         }
 
         @Bean
+        //classe que sabe inicializar o AuthenticationManager
         public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) throws Exception{
             return configuration.getAuthenticationManager();
         }
