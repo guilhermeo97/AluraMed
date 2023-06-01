@@ -1,11 +1,12 @@
 package br.com.alura.aluramed.domain.usuario;
 
-import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotBlank;
 
 public record DadosAutenticacao(
     
-    @NotNull
-    String login, 
-    @NotNull
+    @NotBlank
+    String login,
+
+    @NotBlank
     String senha) {
 }
