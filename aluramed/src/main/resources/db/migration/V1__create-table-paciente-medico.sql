@@ -1,5 +1,5 @@
 create table medicos(
-    id int not null,
+    id bigint not null,
     nome varchar(100) not null,
     email varchar(100) not null unique,
     crm varchar(6) not null unique,
@@ -11,11 +11,12 @@ create table medicos(
     complemento varchar(100),
     numero varchar(20),
     uf char(2) not null,
-    cidade varchar(100) not null
+    cidade varchar(100) not null,
+    primary key(id)
 );
 
 create table pacientes(
-    id int primary key not null,
+    id bigint not null,
     nome varchar(100) not null,
     ativo boolean,
     email varchar(100) not null unique,
@@ -27,5 +28,25 @@ create table pacientes(
     complemento varchar(100),
     numero varchar(20),
     uf char(2) not null,
-    cidade varchar(100) not null
+    cidade varchar(100) not null,
+    primary key(id)
+);
+create table usuarios(
+
+    id bigint not null ,
+    login varchar(100) not null,
+    senha varchar(255) not null,
+
+    primary key(id)
+
+);
+
+create table consultas(
+    id bigint not null,
+    medico_id bigint not null,
+    paciente_id bigint not null,
+    data timestamp not null,
+    primary key(id),
+    foreign key(medico_id) references medicos(id),
+    foreign key(paciente_id) references pacientes(id)
 );
